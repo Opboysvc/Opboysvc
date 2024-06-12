@@ -1,25 +1,4 @@
-Skip to content
-Navigation Menu
-
-Code
-Issues
-1
-Breadcrumbsminecraft-optimization
-/README.md
-Latest commit
-Pantera07
-Pantera07
-2 months ago
-History
-623 lines (388 loc) · 31.9 KB
-File metadata and controls
-
-Preview
-
-Code
-
-Blame
-Minecraft server optimization guide
+# Minecraft server optimization guide
 Note for users that are on vanilla, Fabric or Spigot (or anything below Paper) - go to your server.properties and change sync-chunk-writes to false. This option is forcibly set to false on Paper and its forks, but on other server implementations you need to switch this to false manually. This allows the server to save chunks off the main thread, lessening the load on the main tick loop.
 
 Guide for version 1.20. Some things may still apply to 1.15 - 1.19.
@@ -35,7 +14,7 @@ Preparations
 Server JAR
 Your choice of server software can make a huge difference in performance and API possibilities. There are currently multiple viable popular server JARs, but there are also a few that you should stay away from for various reasons.
 
-Recommended top picks:
+# Recommended top picks:
 
 Paper - The most popular server software that aims to improve performance while fixing gameplay and mechanics inconsistencies.
 Pufferfish - Paper fork that aims to further improve server performance.
